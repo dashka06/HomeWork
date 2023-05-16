@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Вибір замовлення з меню у кав'ярні</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header_title">
+      Вибір замовлення
+    </h1>
+  </header>
+  <main class="main">
+    <section class="main_section">
+      <h2 class="section_title">
+        Меню
+      </h2>
+      <table class="section_table">
+        <thead>
+          <tr>
+            <th class="table_th">
+              Назва страви
+            </th>
+            <th class="table_th">
+              Опис
+            </th>
+            <th class="table_th">
+              Ціна
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table_td">
+              Еспресо
+            </td>
+            <td class="table_td">
+              Класичний напій з кавових зерен
+            </td>
+            <td class="table_td">
+              25 грн
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table_td">
+              Капучіно
+            </td>
+            <td class="table_td">
+              Напій з кавових зерен з додаванням молока та піни
+            </td>
+            <td class="table_td">
+              35 грн
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table_td">
+              Чай з лимоном
+            </td>
+            <td class="table_td">
+              Ароматний чай зі свіжим лимоном
+            </td>
+            <td class="table_td">
+              20 грн
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table_td">
+              Тірамісу
+            </td>
+            <td class="table_td">
+              Італійський десерт з маскарпоне та кавою
+            </td>
+            <td class="table_td">
+              55 грн
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table_td">
+              Омлет з шинкою та сиром
+            </td>
+            <td class="table_td">
+              Смачний сніданок з яєць, шинкою та сиром
+            </td>
+            <td class="table_td">
+              45 грн
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table_td">
+              Цезар з куркою
+            </td>
+            <td class="table_td">
+              Салат з курячим філе, сиром пармезан та соусом цезар
+            </td>
+            <td class="table_td">
+              65 грн
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table_td">
+              Різотто з грибами
+            </td>
+            <td class="table_td">
+              Страва з рису та грибів, заправлена вершковим соусом
+            </td>
+            <td class="table_td">
+              75 грн
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <section class="section_order">
+        <h2>Замовлення</h2>
+        <form class="form">
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="category">Категорія:</label>
+          <select id="category" name="category">
+            <option value="Напої">Напої</option>
+            <option value="Десерти">Десерти</option>
+            <option value="Сніданки">Сніданки</option>
+            <option value="Салати">Салати</option>
+            <option value="Гарячі страви">Гарячі страви</option>
+          </select>
+    
+          <label for="menu_item">Страва:</label>
+          <select id="menu_item" name="menu_item">
+            <option value="Еспресо">Еспресо</option>
+            <option value="Капучіно">Капучіно</option>
+            <option value="Чай з лимоном">Чай з лимоном</option>
+            <option value="Тірамісу">Тірамісу</option>
+            <option value="Омлет з шинкою та сиром">Омлет з шинкою та сиром</option>
+            <option value="Цезар з куркою">Цезар з куркою</option>
+            <option value="Різотто з грибами">Різотто з грибами</option>
+          </select>
+    
+          <label for="quantity">Кількість:</label>
+          <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+    
+          <fieldset>
+            <legend>Додатково:</legend>
+            <input type="checkbox" id="sugar" name="sugar" value="yes">
+            <label for="sugar">Цукор</label><br>
+    
+            <input type="checkbox" id="milk" name="milk" value="yes">
+            <label for="milk">Молоко</label><br>
+    
+            <input type="checkbox" id="cream" name="cream" value="yes">
+            <label for="cream">Вершки</label><br>
+          </fieldset>
+    
+          <button type="submit">Замовити</button>
+        </form>
+      </section>
+    
+      <section class="pictures">
+        <h2>Картинки</h2>
+        <figure>
+          <img
+            src="./images/photo_2023-05-15_23-34-15.jpg" 
+            alt="Кава"
+            class="coffe"
+          >
+          <figcaption>Кава</figcaption>
+        </figure>
+    
+        <figure>
+          <img 
+            src="./images/photo_2023-05-15_23-36-10.jpg" 
+            alt="Десерт"
+            class="dessert"
+          >
+          <figcaption>Десерт</figcaption>
+        </figure>
+
+        <figure>
+          <img 
+            src="./images/photo_2023-05-15_23-39-34.jpg" 
+            alt="Десерт"
+            class="dessert"
+          >
+          <figcaption>Десерт</figcaption>
+        </figure>
+      </section>
+    
+      <footer>
+        <section>
+          <h2>Контакти</h2>
+          <p>Для отримання додаткової інформації звертайтесь за наступними контакми:</p>
+          <ul>
+            <li>Телефон: +380987654321</li>
+            <li>Email: coffeehouse@gmail.com</li>
+          </ul>
+          <p>Ви також можете відвідати наші соціальні мережі:</p>
+          <ul>
+            <li><a href="https://www.facebook.com/coffeehouse">Facebook</a></li>
+            <li><a href="https://www.instagram.com/coffeehouse">Instagram</a></li>
+          </ul>
+        </section>
+
+        <p>&copy; 2023 Кав'ярня "CoffeeHouse"</p>
+      </footer>
+    </body>
+  </main>
+</html>        
